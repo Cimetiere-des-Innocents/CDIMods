@@ -1,0 +1,6 @@
+[submodule "Underground"]
+	path = Underground
+	url = https://github.com/Cimetiere-des-Innocents/Underground-121.git
+[submodule "CDICore"]
+	path = CDICore
+	url = https://github.com/Cimetiere-des-Innocents/CDICore.git
