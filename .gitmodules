@@ -4,3 +4,6 @@
 [submodule "CDICore"]
 	path = CDICore
 	url = https://github.com/Cimetiere-des-Innocents/CDICore.git
+[submodule "CDILib"]
+	path = CDILib
+	url = https://github.com/Cimetiere-des-Innocents/CDILib.git

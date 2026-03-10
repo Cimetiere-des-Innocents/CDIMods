@@ -2,6 +2,7 @@
   <dictionary name="project">
     <words>
       <w>cdicore</w>
+      <w>cdilib</w>
     </words>
   </dictionary>
 </component>

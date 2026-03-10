@@ -33,6 +33,7 @@ repositories {
 }
 
 dependencies {
+    runtimeOnly project(":CDILib")
     runtimeOnly project(":Underground")
     runtimeOnly project(":CDICore")
 }

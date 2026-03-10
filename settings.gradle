@@ -12,6 +12,7 @@ plugins {
 
 rootProject.name = 'CDIMods'
 
+include 'CDILib'
 include 'Underground'
 include 'CDICore'
 

@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CDICore" />
+            <option value="$PROJECT_DIR$/CDILib" />
             <option value="$PROJECT_DIR$/Runtime" />
             <option value="$PROJECT_DIR$/Underground" />
           </set>
