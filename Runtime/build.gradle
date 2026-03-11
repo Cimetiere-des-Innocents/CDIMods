@@ -30,11 +30,25 @@ repositories {
         name = "Illusive Soulworks maven"
         url = "https://maven.theillusivec4.top/"
     }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                url "https://cursemaven.com"
+            }
+        }
+        filter {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 dependencies {
     runtimeOnly project(":CDILib")
     runtimeOnly project(":Underground")
     runtimeOnly project(":CDICore")
+
+    // 用于测试Underground与CuriosAPI的兼容
+    runtimeOnly "curse.maven:charm-of-undying-316873:5846603"
 }
 
