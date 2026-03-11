@@ -41,9 +41,34 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+
+    maven {
+        name 'IzzelAliz Maven'
+        url 'https://maven.izzel.io/releases/'
+    }
 }
 
 dependencies {
+    additionalRuntimeClasspath runtimeOnly("icyllis.modernui:ModernUI-Core:${modernui_version}") {
+        exclude group: "org.slf4j", module: "slf4j-api"
+        exclude group: "org.apache.logging.log4j", module: "log4j-core"
+        exclude group: "org.apache.logging.log4j", module: "log4j-api"
+        exclude group: "com.google.code.findbugs", module: "jsr305"
+        exclude group: "org.jetbrains", module: "annotations"
+        exclude group: "com.ibm.icu", module: "icu4j"
+        exclude group: "it.unimi.dsi", module: "fastutil"
+    }
+
+    additionalRuntimeClasspath runtimeOnly("icyllis.modernui:ModernUI-Markflow:${modernui_version}") {
+        exclude group: "org.slf4j", module: "slf4j-api"
+        exclude group: "org.apache.logging.log4j", module: "log4j-core"
+        exclude group: "org.apache.logging.log4j", module: "log4j-api"
+        exclude group: "com.google.code.findbugs", module: "jsr305"
+        exclude group: "org.jetbrains", module: "annotations"
+        exclude group: "com.ibm.icu", module: "icu4j"
+        exclude group: "it.unimi.dsi", module: "fastutil"
+    }
+
     runtimeOnly project(":CDILib")
     runtimeOnly project(":Underground")
     runtimeOnly project(":CDICore")
